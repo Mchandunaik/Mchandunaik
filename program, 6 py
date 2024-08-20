@@ -1,0 +1,31 @@
+\\reverse a string
+
+
+s=input("enter a string : ")
+print(s[::-1])
+	
+# reverse qastring with out usinng slicing
+
+s=input("enter a string : ")
+print("".join(reversed(s)))
+
+# palindrome
+s=input("enter a string : ")
+if(s==s[::-1]):
+	print("palindrome")
+else:
+	print("not a palindrome")	
+
+ #length of the string
+s=input("enter a string : ")
+count=0
+for i in s:
+	count+=1;
+print("lenth of the string is :",count)	
+#vowel count
+s=input("enter a string : ")
+count=0
+for i in s:
+	if i in "aeiouAEIOU":
+		count+=1
+print("lenth of the string is :",count)	
