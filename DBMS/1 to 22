@@ -1,0 +1,18 @@
+select*from emp;
+select*from emp where deptno = 10;
+select*from emp where deptno!=30;
+select count(*) as total from emp;
+select*from emp order by sal desc;
+select*from emp order by deptno asc,sal desc;
+select*from emp where hiredate like '%81';
+select ename,dname,empno,loc from emp natural join dept;
+select * from emp where mgr in(7698,7566) and sal > 1500;
+select * from emp where sal < (select sal from emp where ename='FORD');
+select distinct job from emp;
+select ename,dname from emp natural join dept where comm is not null;
+select empno,ename,sal,(sal+sal*0.15) as newsal from emp;
+select e1.ename as emp,e2.ename as mgr
+from emp e1,emp e2
+where e1.mgr = e2.empno;
+select*from emp where length(ename) = 5;
+select*from emp where ename like 'j%s';
