@@ -16,3 +16,6 @@ from emp e1,emp e2
 where e1.mgr = e2.empno;
 select*from emp where length(ename) = 5;
 select*from emp where ename like 'j%s';
+select*from emp where deptno not in(10,20,40);
+select*from emp where job not in('PRESDENT','MANAGER');
+select max(sal) from emp; 
